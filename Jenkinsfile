@@ -16,7 +16,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                build: 'kubectl'
+                build 'kubectl'
             }
         }
     }
