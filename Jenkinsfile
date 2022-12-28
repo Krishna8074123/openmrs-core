@@ -16,7 +16,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'kubectl get po'
+                build: 'kubectl'
             }
         }
     }
