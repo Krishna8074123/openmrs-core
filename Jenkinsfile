@@ -14,10 +14,5 @@ pipeline {
                 sh 'docker image push krishna8080/test1:1.0'
             }
         }
-        stage('deploy') {
-            steps {
-                build 'kubectl'
-            }
-        }
     }
 }
