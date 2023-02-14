@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'docker image build -t krishna8080/test1:2.0 .'
+                sh 'docker image build -t krishna123123/test1:2.0 .'
             }
         }
         stage('push') {
             steps {
-                sh 'docker image push krishna8080/test1:2.0'
+                sh 'docker image push krishna123123/test1:2.0'
             }
         }
         stage('kubectl') {
